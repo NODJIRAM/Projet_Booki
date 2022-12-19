@@ -1,0 +1,303 @@
+/* realisation de l'en-tete */
+
+@media screen and (max-width: 1500px) {
+    .marseille-populaires{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .Marseille_1, .Marseille_2{
+        flex-direction: column;
+        width: auto;
+    }
+    .activite-marseille{
+        flex-direction: column;
+        width: auto;
+    }
+    .texte-icon{
+        margin-top: 1rem;
+    }
+}
+    
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* L'en tete du projet booki */
+
+.logo{
+    margin-right: auto;
+    padding: 0 2rem 0 2rem;
+} 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+nav a{
+    font-weight: bold;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+nav a:hover{
+    border-top: 2px solid #0065fc;
+    color: #0065fc;
+}
+/* fin de realisation de l'en-tete */
+
+/* barre de recherche */
+
+.recherche
+{
+    display: flex;
+    padding-bottom: 2rem;
+}
+.icon-map
+{
+    padding: 1rem 1.2rem;
+    background-color: aqua;
+    border-radius: 10px 0 0 10px;
+}
+.recherche input
+{
+    padding-right: 3rem;
+    border: 1px solid rgb(0, 255, 255);
+}
+.recherche input:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color:rgb(177, 142, 89);
+}
+.recherche button
+{
+    border-radius: 0 10px 10px 0;
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+}
+.recherche button:hover{
+    background-color: rgb(177, 142, 89);
+    cursor: pointer; 
+}
+/* fin de barre de recherche */
+
+/* réalisation des filtres et icons */
+
+.filtres-liste{
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.texte-icon:hover{
+    background-color: rgb(65, 105, 225);
+    transform: scale(1.05);
+}
+
+.fille{
+    font-weight: bold;
+    margin-right: 4rem;
+}
+
+.texte-icon{
+    display: flex;
+    border: 1px solid royalblue;
+    border-radius: 2rem;
+    align-items: center;
+    transition: all 150ms ease;
+    padding-right: 2rem;
+    margin-right: 10rem;
+}
+
+.texte-icon i{
+    background-color: royalblue;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: -0.5px;
+}
+
+.texte-icon span{
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.icon-plus{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.icon-plus i{
+    margin-right: 1rem;
+}
+/* fin de realisation des filtres et icons */
+
+/* partie de l'hébergements à marseille */
+
+.marseille-populaires{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+h4{
+    margin-left: 50px;
+}
+
+.Marseille{
+    display: block;
+    background-color: rgb(199, 199, 183);
+    border-radius: 20px;
+    padding-top: -50px;
+}
+
+.Marseille img{
+    border-radius: 20px;
+}
+
+.Marseille_1{
+    display: flex;
+    margin-top: 01px;
+}
+
+.Marseille_1 figure:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.mar1{
+    background-color: white;
+    border-radius: 20px;
+    margin-block: 25px;
+    padding-left: 05px;
+    padding-top: 05px;
+    padding-bottom: 05px;
+    padding-right: 05px;
+}
+
+.Marseille_2{
+    display: flex;
+}
+
+.Marseille_2 img{
+    border-radius: 20px 20px 0px 0px;
+} 
+
+.Marseille_2 figure:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+h3{
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+h3 :hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.stars{
+    color: blue;
+}
+.stars .lightstar{
+color: grey;
+}
+
+h5 , p , i{
+    padding-left: 25px;
+}
+
+/* partie les plus populaires */
+.populaires{
+    background-color: rgb(199, 199, 183);
+    display: block;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.populaires figure:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.populaires img{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.populaires .mar1 {
+    display: flex;
+}
+.populaires i{
+    margin-top: 100px;
+}
+
+span{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+/* deuxieme partie activités de marseille */
+/* section des activités de Marseille */
+
+.activite-marseille{
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.activite-marseille img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fort-iles{
+    display: block;
+}
+
+.activite-marseille figure:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.mar2{
+    background-color: white;
+    border-radius: 20px;
+    margin-block: 25px;
+    padding-left: 05px;
+    padding-top: 05px;
+    padding-bottom: 05px;
+    padding-right: 05px;
+}
+
+h6{
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+h4{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+/* le pied de la page */
+
+.pied-page{
+    background-color: rgb(92, 92, 84);
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: smaller;
+    padding: 1rem;
+    padding-top: -15%;
+    margin-top: 5%;
+    border-radius: 15px;
+}
