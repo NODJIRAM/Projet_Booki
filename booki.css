@@ -31,6 +31,8 @@ html, body {
 .logo{
     margin-right: auto;
     padding: 0 2rem 0 2rem;
+    width: 100px;
+    height: 80px;
 } 
 nav{
     display: flex;
@@ -59,19 +61,19 @@ nav a:hover{
 }
 .icon-map
 {
-    padding: 1rem 1.2rem;
-    background-color: aqua;
+    padding: 1rem;
+    background-color: lightgrey;
     border-radius: 10px 0 0 10px;
 }
 .recherche input
 {
     padding-right: 3rem;
-    border: 1px solid rgb(0, 255, 255);
+    border: 1px solid lightgrey;
 }
 .recherche input:hover{
     cursor: pointer;
     transform: scale(1.02);
-    background-color:rgb(177, 142, 89);
+    background-color:rgba(177, 151, 130, 0.61);
 }
 .recherche button
 {
@@ -92,16 +94,18 @@ nav a:hover{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 2em;
+
+}
+.filtres-liste h3
+{
+    position: relative;
+    top: 10px;
 }
 
 .texte-icon:hover{
     background-color: rgb(65, 105, 225);
     transform: scale(1.05);
-}
-
-.fille{
-    font-weight: bold;
-    margin-right: 4rem;
 }
 
 .texte-icon{
@@ -110,8 +114,8 @@ nav a:hover{
     border-radius: 2rem;
     align-items: center;
     transition: all 150ms ease;
-    padding-right: 2rem;
-    margin-right: 10rem;
+   
+   
 }
 
 .texte-icon i{
@@ -123,7 +127,11 @@ nav a:hover{
 
 .texte-icon span{
     font-weight: bold;
-    padding: 1rem;
+    padding: -3rem;
+}
+span
+{
+    padding-left: 1rem;
 }
 
 .icon-plus{
@@ -154,6 +162,7 @@ h4{
     background-color: rgb(199, 199, 183);
     border-radius: 20px;
     padding-top: -50px;
+
 }
 
 .Marseille img{
@@ -178,6 +187,9 @@ h4{
     padding-top: 05px;
     padding-bottom: 05px;
     padding-right: 05px;
+}
+.mar2, .mar1{
+    box-shadow: rgb(212, 195, 195) 3px 6px 0.8px;
 }
 
 .Marseille_2{
@@ -300,4 +312,22 @@ h4{
     padding-top: -15%;
     margin-top: 5%;
     border-radius: 15px;
+}
+/* ligne de fixation de taille d'images */
+
+.image1{
+    width: 300px;
+    height: 280px;
+}
+.image2{
+    width: 200px;
+    height: 260px;
+}
+.image3{
+    width: 350px;
+    height: 500px;
+}
+.image4{
+    width: 350px;
+    height: 200px;
 }
