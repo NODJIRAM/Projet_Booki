@@ -1,29 +1,10 @@
 /* realisation de l'en-tete */
 
-@media screen and (max-width: 900px) {
-    .marseille-populaires{
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-    }
-    .Marseille_1, .Marseille_2{
-        flex-direction: column;
-        width: auto;
-    }
-    .activite-marseille{
-        flex-direction: column;
-        width: auto;
-    }
-    .texte-icon{
-        margin-top: 1rem;
-    }
-}
-    
+
 html, body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
-    padding-left: 0px;
-    padding-right: 0px;
+   
 }
 
 /* L'en tete du projet booki */
@@ -95,7 +76,6 @@ nav a:hover{
     align-items: center;
     flex-wrap: wrap;
     gap: 2em;
-
 }
 .filtres-liste h3
 {
@@ -114,8 +94,6 @@ nav a:hover{
     border-radius: 2rem;
     align-items: center;
     transition: all 150ms ease;
-   
-   
 }
 
 .texte-icon i{
@@ -148,9 +126,9 @@ span
 
 .marseille-populaires{
     display: flex;
-    gap: 3rem;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
+    margin: 47px;
 }
 
 h4{
@@ -171,7 +149,6 @@ h4{
 
 .Marseille_1{
     display: flex;
-    margin-top: 01px;
 }
 
 .Marseille_1 figure:hover{
@@ -182,11 +159,7 @@ h4{
 .mar1{
     background-color: white;
     border-radius: 20px;
-    margin-block: 25px;
-    padding-left: 05px;
-    padding-top: 05px;
-    padding-bottom: 05px;
-    padding-right: 05px;
+    padding: 05px 05px;
 }
 .mar2, .mar1{
     box-shadow: rgb(212, 195, 195) 3px 6px 0.8px;
@@ -259,9 +232,9 @@ span{
 /* deuxieme partie activités de marseille */
 /* section des activités de Marseille */
 
-.activite-marseille{
+.activite-marseille {
     display: flex;
-    background-color: whitesmoke;
+    width: auto;
     border-radius: 20px;
     justify-content: space-between;
 }
@@ -277,6 +250,11 @@ span{
 .activite-marseille figure:hover{
     cursor: pointer;
     transform: scale(1.02);
+}
+.primo, .secondo{
+    display: flex;
+    margin: 18px;
+    margin-inline: 0.5em;
 }
 
 .mar2{
@@ -301,10 +279,12 @@ h4{
 }
 
 /* le pied de la page */
-
-.pied-page{
-    background-color: rgb(92, 92, 84);
+footer{
+    margin: 47px;
     width: auto;
+}
+.pied-page{
+    background-color: rgb(211, 211, 176);
     display: flex;
     justify-content: space-evenly;
     font-size: smaller;
@@ -330,4 +310,170 @@ h4{
 .image4{
     width: 350px;
     height: 200px;
+}
+
+@media all and (min-width: 1351px) and (max-width: 1510px) {
+    /* mon code css pour la version desktop */
+    .marseille-populaires{
+        flex-direction: column;
+        background: none;
+        gap: 2em;
+    }
+    h4{
+        margin-top: -2em;
+        margin-bottom: -4em;
+    }
+    .activite-marseille{
+        display: flex;
+        flex-direction: column;
+    }
+    .primo figure .mar2 img{
+        align-items: center;
+        width: 100%;
+    }
+    .secondo{
+        margin-top: -3em;
+        margin-left: 4em;
+    }
+    .secondo figure .mar2 img{
+        align-items: center;
+        width: 100%;
+    }
+    .populaires figure .mar1 img{
+        width: 65%;
+    }
+}
+@media all and (min-width: 941px) and (max-width: 1350px){
+    /* mon code css pour la version tablette */
+    .Marseille{
+        flex-direction: column;
+        background: none;
+        margin-top: -5em;
+    }
+    h4{
+        margin-top: -4em;
+    }
+    .Marseille, .Marseille_1 {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px 20px 0 0;
+    }
+    .Marseille_1 figure .mar1 img{
+        border-radius: 20px 20px 0 0;
+    }
+    .Marseille, .Marseille_2 {
+        display: flex;
+        flex-direction: column;  
+    }
+    .populaires{
+        background: none;
+    }
+    .populaires figure .mar1 img{
+        width: 60%;
+    }
+    figure .mar1 img{
+        width: 100%;
+        height: -10%;
+
+    }
+    .activite-marseille{
+        display: block;
+    }
+    .primo, .secondo{
+        display: flex;
+        margin-top: -4em;
+        width: 100%;
+    }
+    .primo figure .mar2 img{
+        align-items: center;
+        width: 100%;
+    }
+    .secondo{
+        margin: -1.6em;
+    }
+    .secondo figure .mar2 img{
+        align-items: center;
+        width: 100%;
+    }
+}
+@media all and (min-width: 641px) and (max-width: 940px){
+    .secondo{
+        flex-direction: column;
+    }
+    .primo{
+        flex-direction: column;
+    }
+}
+@media all and (min-width: 280px) and (max-width: 640px){
+    /* mon code css pour la version mobile */
+    .Marseille{
+        background: none;
+        width: 100%;
+        margin-top: 3em;
+    }
+    .marseille-populaires{
+        flex-direction: column;
+    }
+    .Marseille_1{
+        flex-direction: column;
+        margin-top: -3em;
+    }
+    .Marseille_1 figure .mar1{
+        width: 150%;
+        margin-left: -4em;
+    }
+    figure .mar1 img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .Marseille_2{
+        flex-direction: column;
+    }
+    .Marseille_2 figure .mar1{
+        width: 150%;
+        margin-left: -4em;
+    }
+    .populaires{
+        background: none;
+        margin-top: -7em;
+    }
+    .populaires figure .mar1{
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+        margin-left: -4em;
+    }
+    .populaires figure .mar1 img{
+        width: 100%;
+    }
+    .populaires .stars{
+        display: flex;
+        margin-left: -18px;
+        margin-top: -6em;
+        margin-bottom: 1em;
+    }
+    .activite-marseille{
+        display: flex;
+        flex-direction: column;
+    }
+    figure .mar2 img{
+        width: 100%;
+    }
+    .primo{
+        margin-top: 2em;
+    }
+    .secondo{
+        margin: -1.1em;
+    }
+    h4{
+        margin-top: -5em;
+    }
+    form .recherche input{
+        padding-right: 0%;  
+      }
+    .pied-page{
+        background: none;
+        width: 100%;
+        margin-left: -2em;
+    }
 }
